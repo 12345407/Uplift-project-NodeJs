@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <%- include('../partials/head.ejs') %> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponser a Child</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--internal CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<style>
+    h1,
+    h2,
+    h3 {
+        font-weight: bolder;
+    }
+
+    body {
+        font-family: "Montserrat";
+    }
+
+    /* nav bar */
+    .navbar-brand {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Ubuntu";
+    }
+
+    .navbar {
+        padding: 0 0 4.5rem;
+    }
+
+    .nav-item {
+        padding: 0 18px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    /* title section */
+    #title {
+        background-color: grey;
+        color: #fff;
+    }
+
+    .big-heading {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .title-image {
+        position: absolute;
+    }
+
+    .container-fluid {
+        padding: 3% 15% 7%;
+    }
+
+    .download-button {
+        margin: 5% 3% 5% 0;
+    }
+
+    .title-image {
+        width: 100%;
+    }
+
+    /* features */
+    #features {
+        padding: 7% 15%;
+        background-color: white;
+        z-index: 1;
+        position: relative;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-box {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .icon {
+        color: grey;
+        margin-bottom: 1rem;
+    }
+
+    .icon:hover {
+        color: black;
+    }
+
+    p {
+        color: #8f8f8f;
+    }
+
+    /* testimonials */
+    #testimonials {
+        background-color: #ef8172;
+        text-align: center;
+        color: #fff;
+    }
+
+    .testimonial-text {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .testimonial-image {
+        width: 10%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+
+    /* call to action*/
+    #cta {
+        background-color: grey;
+        color: #fff;
+        text-align: center;
+        padding: 7% 15% 7%;
+    }
+
+    /* footer */
+    #footer {
+        text-align: center;
+        padding: 7% 15%;
+        background-color: #d8d6d6;
+    }
+
+    .social-logo {
+        margin: 20px 10px;
+    }
+
+    /* responsive */
+    @media (max-width: 990px) {
+        .title-image {
+            position: static;
+        }
+
+        .title {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <!-- <%- include('../partials/navbar.ejs') %> -->
+
+        <main>
+            <%- body %>
+        </main>
+
+        <!-- <%- include('../partials/footer.ejs') %> -->
+    </div>
+</body>
+
+</html>
